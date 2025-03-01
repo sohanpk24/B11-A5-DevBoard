@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DevBoard</title>
     <!-- daisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
@@ -12,8 +13,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[rgb(244,247,255)]">
-    <header>
+  <body class="">
+    <header class="pt-6">
       <!-- navbar -->
       <nav>
         <div
@@ -34,7 +35,7 @@
                 >
               </li>
               <li>
-                <a class="cursor-pointer"
+                <a id="colorBtn" class="cursor-pointer"
                   ><img src="/assets/theme-btn.png" alt=""
                 /></a>
               </li>
@@ -45,9 +46,9 @@
     </header>
 
     <main>
-      <section class="mt-10">
+      <section class="mt-6">
         <div class="container w-11/12 mx-auto">
-          <div class="grid p-4 bg-white grid-cols-12 gap-4">
+          <div class="grid grid-cols-12 gap-4">
             <div class="flex bg-[rgb(244,247,255)] justify-between items-center p-4 col-span-2 h-40 rounded-md ">
                 <div>
                     <img src="./assets/checkbox.png" alt="">
@@ -72,7 +73,7 @@
                     <h4 class="font-bold text-xl">Jul 28 2025 </h4>
                 </div>
             </div>
-            <div class="col-span-3 rounded-md row-span-3 border-2">
+            <div class="col-span-3 bg-[rgb(255,255,255)] rounded-md row-span-3">
                 <div>
                     <div class="flex items-center justify-center mt-8 gap-3">
                         <img src="./assets/activity.png" alt="">
@@ -80,7 +81,7 @@
                     </div>
                     <div class="justify-center flex mt-4"><button class="btn btn-primary ">Clear History</button></div>
                 </div>
-                <div>content</div>
+                <div class="w-10/12 mx-auto p-2 rounded-md mt-4 bg-[rgb(244,247,255)]">content</div>
             </div>
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
@@ -199,6 +200,7 @@
           </div>
         </div>
       </section>
+
     </main>
     <footer></footer>
 
