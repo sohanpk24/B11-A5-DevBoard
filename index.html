@@ -12,6 +12,12 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        #new-content>li{
+            background-color:rgb(244,247,255);
+            padding: 10px;
+        }
+    </style>
   </head>
   <body class="bg-green-200">
     <header class="pt-6">
@@ -30,8 +36,8 @@
             <ul class="flex items-center gap-5">
               <li class="flex items-center btn rounded-3xl">
                 <img class="w-6 h-6" src="./assets/checkbox.png" alt="" /><span
-                  class="text-2xl"
-                  >23</span
+                  id="count-up"  class="text-2xl"
+                   >23</span
                 >
               </li>
               <li>
@@ -56,11 +62,11 @@
                 </div>
                 <div>
                     <h6 class="font-semibold">Task Assigned</h6>
-                    <h4 class="text-2xl font-bold">05</h4>
+                    <h4 id="task-count" class="text-2xl font-bold">06</h4>
                 </div>
             </div>
             <!-- Discover Something -->
-            <div class="col-span-5 h-40 flex items-center gap-8 rounded-md bg-gradient-to-r from-blue-500 via-blue-500 to-blue-300 p-6 text-white">
+            <div id="discover" class="col-span-5 h-40 flex items-center gap-8 rounded-md bg-gradient-to-r from-blue-500 via-blue-500 to-blue-300 p-6 text-white"  style="cursor: pointer;">
                 <div><img class=" border-2 border-dashed border-[rgb(255,255,255)]" src="./assets/board.png" alt=""></div>
                 <div>
                     <h4>Discover Something <br> New Today!</h4>
@@ -87,13 +93,15 @@
                     </div>
                     <div class="justify-center flex mt-4"><button class="btn btn-primary ">Clear History</button></div>
                 </div>
-                <div class="w-10/12 mx-auto p-2 rounded-md mt-4 bg-[rgb(244,247,255)]">content</div>
+                <div class="w-10/12 mx-auto my-4 p-2 rounded-md mt-4">
+                    <ul  id="new-content" class="grid gap-4"></ul>
+                </div>
             </div>
             <!-- first box -->
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>ShopEase</span></div>
-                    <h4 class="text-xl font-semibold">Fix Mobile Button Issue </h4>
+                    <h4 class=" box-title text-xl font-semibold">Fix Mobile Button Issue </h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
@@ -113,7 +121,7 @@
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>CloudSync</span></div>
-                    <h4 class="text-xl font-semibold">Add Dark Mode </h4>
+                    <h4 class="box-title text-xl font-semibold">Add Dark Mode </h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
@@ -133,7 +141,7 @@
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>SwiftPay</span></div>
-                    <h4 class="text-xl font-semibold">Optimize  Home page  </h4>
+                    <h4 class="box-title text-xl font-semibold">Optimize  Home page  </h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
@@ -153,7 +161,7 @@
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>Meta</span></div>
-                    <h4 class="text-xl font-semibold">Add new emoji 🤲 </h4>
+                    <h4 class="box-title text-xl font-semibold">Add new emoji 🤲 </h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
@@ -173,7 +181,7 @@
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>Google LLC</span></div>
-                    <h4 class="text-xl font-semibold">Integrate OpenAI API  </h4>
+                    <h4 class="box-title text-xl font-semibold">Integrate OpenAI API  </h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
@@ -193,7 +201,7 @@
             <div class="col-span-3 rounded-md p-4 bg-[rgb(244,247,255)]">
                 <div>
                     <div class="bg-white p-2 rounded-md w-fit"><span>Glassdoar</span></div>
-                    <h4 class="text-xl font-semibold">Improve Job searching</h4>
+                    <h4 class="box-title text-xl font-semibold">Improve Job searching</h4>
                 </div>
                 <div class="bg-white p-2 rounded-md my-2">
                     <p class="text-[10px] opacity-70">Debug using Chrome DevTools, check  for overlapping elements, and ensure onClick works properly
