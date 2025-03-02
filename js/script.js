@@ -6,7 +6,7 @@ document.getElementById("colorBtn").addEventListener("click", function () {
 
 // redirect blog page
 document.getElementById("discover").addEventListener("click", function () {
-  window.location.href = "../blog.html";
+  window.location.href = "blog.html";
 });
 
 // current time zone
