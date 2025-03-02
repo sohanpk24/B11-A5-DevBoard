@@ -4,11 +4,11 @@ document.getElementById("colorBtn").addEventListener("click", function () {
   document.body.style.backgroundColor = color;
 });
 
-// redirect blog page 
+// redirect blog page
 document.getElementById("discover").addEventListener("click", function () {
   window.location.href = "/blog.html";
-});    
- 
+});
+
 // current zone
 function updateClock() {
   document.getElementById("clock-zone").innerText =
@@ -16,11 +16,6 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 updateClock();
-
-
-
-
-
 
 // completed button
 const buttons = document.querySelectorAll(".update");
@@ -53,24 +48,28 @@ for (const btn of buttons) {
       //   console.log("Current Task Count:", taskCountUp);
     }
 
-   const newContent = document.getElementById("new-content");
-   if (newContent) {
-     const boxTitle = event.target
-       .closest(".col-span-3")
-       .querySelector(".box-title");
-     if (boxTitle) {
-       const newTitle = document.createElement("li"); 
+    // side bar added the box title
+    const newContent = document.getElementById("new-content");
+    if (newContent) {
+      const boxTitle = event.target
+        .closest(".col-span-3")
+        .querySelector(".box-title");
+      if (boxTitle) {
+        const newTitle = document.createElement("li");
         const currentTime = new Date().toLocaleTimeString();
-        newTitle.innerText = `Title: ${boxTitle.innerText} - Added at: ${currentTime}`;
-       newContent.appendChild(newTitle);
-     }
-   } else {
-     console.error("Element with id 'new-content' not found!");
-   }
+        newTitle.innerText = `You have Complete The Task: ${boxTitle.innerText} - Added at: ${currentTime}`;
+        newContent.appendChild(newTitle);
+      }
+    }
 
+
+     
+
+
+    // Clear History
+    document.getElementById("clear-btn").addEventListener("click", function () {
+      const newContent = document.getElementById("new-content");
+      newContent.innerHTML = "";
+    });
   });
 }
-
-
-
-
