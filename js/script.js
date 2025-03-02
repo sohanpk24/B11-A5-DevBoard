@@ -6,10 +6,10 @@ document.getElementById("colorBtn").addEventListener("click", function () {
 
 // redirect blog page
 document.getElementById("discover").addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "../blog.html";
 });
 
-// current zone
+// current time zone
 function updateClock() {
   document.getElementById("clock-zone").innerText =
     new Date().toLocaleTimeString();
@@ -45,10 +45,10 @@ for (const btn of buttons) {
       document.getElementById("count-up").innerText = taskCountUp
         .toString()
         .padStart(2, "0");
-      //   console.log("Current Task Count:", taskCountUp);
+      //   console.log("Task Count:", taskCountUp);
     }
 
-    // side bar added the box title
+    // Side bar added the box title
     const newContent = document.getElementById("new-content");
     if (newContent) {
       const boxTitle = event.target
@@ -61,10 +61,6 @@ for (const btn of buttons) {
         newContent.appendChild(newTitle);
       }
     }
-
-
-     
-
 
     // Clear History
     document.getElementById("clear-btn").addEventListener("click", function () {
